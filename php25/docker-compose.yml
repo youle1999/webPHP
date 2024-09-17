@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./web/src:/var/www/html
+    container_name: rss-php-web
+
